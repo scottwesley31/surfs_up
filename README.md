@@ -28,6 +28,7 @@ To better visualize the distribution of all of the reported June temperatures a 
 ![june_histogram](https://user-images.githubusercontent.com/107309793/184779680-93247da8-9bb9-44e2-992f-3c6635ea1386.png)
 
 It's clear from this figure that most of the time the temperature is somewhere between 70-79°F (most notably 74-75°F which is consistent with the summary statistics).
+NOTE: "Frequency" in the y-axis represents the number of times a datapoint in a specific temperature range appears in the dataset.
 
 ### Determine the Summary Statistics for December
 The same process was repeated for the temperatures in the months of December in Oahu. A list of all of the temperatures in December (`december_temps`) can be created with the following code:
@@ -38,7 +39,7 @@ This can then be converted into a Pandas DataFrame.
 
 ![december_temps_df](https://user-images.githubusercontent.com/107309793/184780081-e0ddaeea-7894-4f10-a6b6-e60a52ddf81a.png)
 
-The summary statistics for June can be calculated and viewed using the `describe()` function resulting in the following output:
+The summary statistics for December can be calculated and viewed using the `describe()` function resulting in the following output:
 
 ![december_temps_stats](https://user-images.githubusercontent.com/107309793/184780096-c5fc681b-6a71-47d0-aa5e-0bcbd747816a.png)
 
@@ -51,3 +52,13 @@ To better visualize the distribution of all of the reported December temperature
 It's clear from this figure that most of the time the temperature is somewhere between 70-75°F (most notably 70-71°F which is consistent with the summary statistics).
 
 ## Summary
+
+### June Temperature Trends in Oahu
+- On average, the temperature in June is around 74.9°F. The June temperatures do not tend to deviate far from the mean (standard deviation of 3.357417).
+- Despite a large range of 65-85°F, the dataset shows that the upper quartile is between 75-77°F and the lower quartile is between 73-75°F meaning the temperature rarely gets as low as 65°F or as high as 85°F.
+- Most of the time the temperature is somewhere between 70-79°F (most notably 74-75°F) as seen in the histogram above.
+
+### December Temperature Trends in Oahu
+- On average, the temperature in December is around 71.0°F. The December temperatures do not tend to deviate far from the mean (standard deviation of 3.745920).
+- Despite a large range of 69-83°F, the dataset shows that the upper quartile is between 71-74°F and the lower quartile is between 69-71°F meaning the temperature does tend to be closer to the lower range and rarely ever gets as hot as 83°F.
+
