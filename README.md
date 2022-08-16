@@ -25,11 +25,29 @@ On average, the temperature in June is around 74.9°F. The June temperatures do 
 
 To better visualize the distribution of all of the reported June temperatures a simple histogram was created.
 
-![june_temps_stats](https://user-images.githubusercontent.com/107309793/184779369-112a26f2-b5b6-43f4-9780-cde6d589d163.png)
+![june_histogram](https://user-images.githubusercontent.com/107309793/184779680-93247da8-9bb9-44e2-992f-3c6635ea1386.png)
 
 It's clear from this figure that most of the time the temperature is somewhere between 70-79°F (most notably 74-75°F which is consistent with the summary statistics).
 
 ### Determine the Summary Statistics for December
-The same process was repeated for the temperatures in the months of December in Oahu.
+The same process was repeated for the temperatures in the months of December in Oahu. A list of all of the temperatures in December (`december_temps`) can be created with the following code:
+
+![december_temps_code](https://user-images.githubusercontent.com/107309793/184780066-a94e561b-3766-481c-b740-c6012cb9ad54.png)
+
+This can then be converted into a Pandas DataFrame.
+
+![december_temps_df](https://user-images.githubusercontent.com/107309793/184780081-e0ddaeea-7894-4f10-a6b6-e60a52ddf81a.png)
+
+The summary statistics for June can be calculated and viewed using the `describe()` function resulting in the following output:
+
+![december_temps_stats](https://user-images.githubusercontent.com/107309793/184780096-c5fc681b-6a71-47d0-aa5e-0bcbd747816a.png)
+
+On average, the temperature in December is around 71.0°F. The December temperatures do not tend to deviate far from the mean (standard deviation of 3.745920).
+
+To better visualize the distribution of all of the reported December temperatures a simple histogram was created.
+
+![december_histogram](https://user-images.githubusercontent.com/107309793/184780103-1c8339c2-eaf9-49c2-ba3e-cf6c4a9f34d7.png)
+
+It's clear from this figure that most of the time the temperature is somewhere between 70-75°F (most notably 70-71°F which is consistent with the summary statistics).
 
 ## Summary
